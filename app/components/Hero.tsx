@@ -18,7 +18,7 @@ export default function Hero() {
       className="relative min-h-screen overflow-hidden flex flex-col justify-center"
       style={{ background: "#0a1f5b" }}
     >
-      {/* Grid background */}
+      {/* Grid */}
       <div
         className="absolute inset-0"
         style={{
@@ -29,7 +29,7 @@ export default function Hero() {
         }}
       />
 
-      {/* Glow orbs */}
+      {/* Orbs */}
       <div
         className="absolute top-0 right-0 w-96 h-96 rounded-full"
         style={{
@@ -47,7 +47,7 @@ export default function Hero() {
         }}
       />
 
-      {/* Floating badge left */}
+      {/* Badge left */}
       <motion.div
         initial={{ opacity: 0, x: -30 }}
         animate={{ opacity: 1, x: 0 }}
@@ -70,7 +70,7 @@ export default function Hero() {
         </div>
       </motion.div>
 
-      {/* Floating badge right */}
+      {/* Badge right */}
       <motion.div
         initial={{ opacity: 0, x: 30 }}
         animate={{ opacity: 1, x: 0 }}
@@ -100,7 +100,7 @@ export default function Hero() {
           initial="initial"
           animate="animate"
         >
-          {/* Top badge */}
+          {/* Top pill badge */}
           <motion.div variants={itemVariants} className="flex justify-center mb-8">
             <div
               className="inline-flex items-center gap-2 rounded-full px-4 py-2"
@@ -110,8 +110,8 @@ export default function Hero() {
               }}
             >
               <span
-                className="w-2 h-2 rounded-full"
-                style={{ background: "#4ade80", animation: "pulse 2s infinite" }}
+                className="w-2 h-2 rounded-full animate-pulse"
+                style={{ background: "#4ade80" }}
               />
               <span
                 style={{
@@ -173,8 +173,8 @@ export default function Hero() {
             <strong style={{ color: "#ffffff", fontWeight: 600 }}>
               100+ step-by-step guides
             </strong>{" "}
-            — startup costs, equipment lists, licenses &amp; profit
-            breakdowns. All Kenya-specific. Pay via{" "}
+            — startup costs, equipment lists, licenses &amp; profit breakdowns.
+            All Kenya-specific. Pay via{" "}
             <strong style={{ color: "#ffffff", fontWeight: 600 }}>
               M-Pesa
             </strong>{" "}
@@ -224,7 +224,7 @@ export default function Hero() {
             </a>
           </motion.div>
 
-          {/* Trust line */}
+          {/* Trust badges */}
           <motion.div
             variants={itemVariants}
             className="flex flex-wrap items-center justify-center gap-6 mt-10"
@@ -261,7 +261,7 @@ export default function Hero() {
         </svg>
       </div>
 
-      {/* Shimmer keyframe */}
+      {/* Shimmer animation */}
       <style>{`
         @keyframes shimmer {
           0% { background-position: -200% center; }
